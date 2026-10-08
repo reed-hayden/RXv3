@@ -3014,5 +3014,3 @@ calminstruction DMOV? dst*, src*
    err 'Invalid source'
    exit
 end calminstruction
-
-btst R1, 16
