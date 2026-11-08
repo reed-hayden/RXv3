@@ -1,20 +1,22 @@
-The following file 'rx.inc' contains calminstructions to assemble the RX v3 instruction set.
+The following files contain an an assembler, formatter and example programs.
+
+'rx.inc' contains calminstructions to assemble the RX v3 instruction set.
 The optional double precision floating point coprocessor instructions are included.
 
-This assembler was for personal use but I thought I should share it.
+'srecord.inc' contains macros to format the assembly into the Motorola S-Record format.
 
-The syntax is not the same as in the official ISA. I have altered it to be similar to the usual fasm x86 syntax.
-Mostly chaging from src,dst --> dst,src
+The assembler syntax is not the same as in the official ISA. I have altered it to be similar to the usual fasm x86 syntax.  
+Mostly changing from src,dst --> dst,src
 e.g.
 
-
+```
 Official: mov.B    R2, 123[R1]
 Altered : mov      byte [R1+123], R2
 
 Official: mov      [R1+], R2
 Altered : mov      R2, [R1]+
 
-Official: mov      R1, [R3,R2]      ;index,base 
+Official: mov      R1, [R3,R2]      ;index,base
 Altered : mov      [R2+R3], R1      ;base+index
 
 Official: dpopm.D  DR1-DR5
@@ -25,7 +27,7 @@ Altered : bfmov    R2, R1, 3, 10, 5
 
 Official: add      R1, R2, R3        ;src,src2,dst
 Altered : add      R3, R1, R2        ;dst,src,src2
-    
+```
 
 The syntax is different due to personal preference and ease of implementation.
 The macros themselves owe a great deal to the lovely 'x86-2.inc' from fasm2, of which I have pilfered the main operand parsing.
