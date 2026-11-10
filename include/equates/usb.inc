@@ -1,0 +1,71 @@
+USB:
+
+.DPUSR0R = 000A_0400h ; Deep Standby USB Transceiver Control/Pin Monitoring Register
+.DPUSR1R = 000A_0404h ; Deep Standby USB Suspend/Resume Interrupt Register
+
+USB0:
+
+.SYSCFG    = 000A_0000h ; System Configuration Control Register
+.SYSSTS0   = 000A_0004h ; System Configuration Status Register 0
+.DVSTCTR0  = 000A_0008h ; Device State Control Register 0
+.CFIFO     = 000A_0014h ; CFIFO Port Register
+.D0FIFO    = 000A_0018h ; D0FIFO Port Register
+.D1FIFO    = 000A_001Ch ; D1FIFO Port Register
+.CFIFOSEL  = 000A_0020h ; CFIFO Port Select Register
+.CFIFOCTR  = 000A_0022h ; CFIFO Port Control Register
+.D0FIFOSEL = 000A_0028h ; D0FIFO Port Select Register
+.D0FIFOCTR = 000A_002Ah ; D0FIFO Port Control Register
+.D1FIFOSEL = 000A_002Ch ; D1FIFO Port Select Register
+.D1FIFOCTR = 000A_002Eh ; D1FIFO Port Control Register
+.INTENB0   = 000A_0030h ; Interrupt Enable Register 0
+.INTENB1   = 000A_0032h ; Interrupt Enable Register 1
+.BRDYENB   = 000A_0036h ; BRDY Interrupt Enable Register
+.NRDYENB   = 000A_0038h ; NRDY Interrupt Enable Register
+.BEMPENB   = 000A_003Ah ; BEMP Interrupt Enable Register
+.SOFCFG    = 000A_003Ch ; SOF Output Configuration Register
+.INTSTS0   = 000A_0040h ; Interrupt Status Register 0
+.INTSTS1   = 000A_0042h ; Interrupt Status Register 1
+.BRDYSTS   = 000A_0046h ; BRDY Interrupt Status Register
+.NRDYSTS   = 000A_0048h ; NRDY Interrupt Status Register
+.BEMPSTS   = 000A_004Ah ; BEMP Interrupt Status Register
+.FRMNUM    = 000A_004Ch ; Frame Number Register
+.DVCHGR    = 000A_004Eh ; Device State Change Register
+.USBADDR   = 000A_0050h ; USB Address Register
+.USBREQ    = 000A_0054h ; USB Request Type Register
+.USBVAL    = 000A_0056h ; USB Request Value Register
+.USBINDX   = 000A_0058h ; USB Request Index Register
+.USBLENG   = 000A_005Ah ; USB Request Length Register
+.DCPCFG    = 000A_005Ch ; DCP Configuration Register
+.DCPMAXP   = 000A_005Eh ; DCP Maximum Packet Size Register
+.DCPCTR    = 000A_0060h ; DCP Control Register
+.PIPESEL   = 000A_0064h ; Pipe Window Select Register
+.PIPECFG   = 000A_0068h ; Pipe Configuration Register
+.PIPEMAXP  = 000A_006Ch ; Pipe Maximum Packet Size Register
+.PIPEPERI  = 000A_006Eh ; Pipe Cycle Control Register
+.PIPE1CTR  = 000A_0070h ; Pipe 1 Control Register
+.PIPE2CTR  = 000A_0072h ; Pipe 2 Control Register
+.PIPE3CTR  = 000A_0074h ; Pipe 3 Control Register
+.PIPE4CTR  = 000A_0076h ; Pipe 4 Control Register
+.PIPE5CTR  = 000A_0078h ; Pipe 5 Control Register
+.PIPE6CTR  = 000A_007Ah ; Pipe 6 Control Register
+.PIPE7CTR  = 000A_007Ch ; Pipe 7 Control Register
+.PIPE8CTR  = 000A_007Eh ; Pipe 8 Control Register
+.PIPE9CTR  = 000A_0080h ; Pipe 9 Control Register
+.PIPE1TRE  = 000A_0090h ; Pipe 1 Transaction Counter Enable Register
+.PIPE1TRN  = 000A_0092h ; Pipe 1 Transaction Counter Register
+.PIPE2TRE  = 000A_0094h ; Pipe 2 Transaction Counter Enable Register
+.PIPE2TRN  = 000A_0096h ; Pipe 2 Transaction Counter Register
+.PIPE3TRE  = 000A_0098h ; Pipe 3 Transaction Counter Enable Register
+.PIPE3TRN  = 000A_009Ah ; Pipe 3 Transaction Counter Register
+.PIPE4TRE  = 000A_009Ch ; Pipe 4 Transaction Counter Enable Register
+.PIPE4TRN  = 000A_009Eh ; Pipe 4 Transaction Counter Register
+.PIPE5TRE  = 000A_00A0h ; Pipe 5 Transaction Counter Enable Register
+.PIPE5TRN  = 000A_00A2h ; Pipe 5 Transaction Counter Register
+.DEVADD0   = 000A_00D0h ; Device Address 0 Configuration Register
+.DEVADD1   = 000A_00D2h ; Device Address 1 Configuration Register
+.DEVADD2   = 000A_00D4h ; Device Address 2 Configuration Register
+.DEVADD3   = 000A_00D6h ; Device Address 3 Configuration Register
+.DEVADD4   = 000A_00D8h ; Device Address 4 Configuration Register
+.DEVADD5   = 000A_00DAh ; Device Address 5 Configuration Register
+.PHYSLEW   = 000A_00F0h ; PHY Cross Point Adjustment Register
+
